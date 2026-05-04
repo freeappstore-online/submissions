@@ -104,10 +104,40 @@ body:
           required: true
         - label: "Tech stack — TypeScript, React 19, Vite 6, Tailwind 4, pnpm"
           required: true
-        - label: "CLAUDE.md — includes AI agent instructions"
+        - label: "PWA installable — apple-mobile-web-app-capable meta tag"
           required: true
         - label: "Unique category — no existing app serves the same purpose"
           required: true
+
+  - type: markdown
+    attributes:
+      value: "## Developer info (shown on your app's store page)"
+
+  - type: input
+    id: developer_name
+    attributes:
+      label: Developer / team name
+      placeholder: "e.g. Jane Smith, Acme Labs"
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Website (optional)
+      placeholder: "https://yoursite.com"
+
+  - type: input
+    id: twitter
+    attributes:
+      label: X / Twitter (optional)
+      placeholder: "@yourhandle"
+
+  - type: input
+    id: github_profile
+    attributes:
+      label: GitHub profile (optional)
+      placeholder: "https://github.com/yourname"
 
   - type: textarea
     id: additional
