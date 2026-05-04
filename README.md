@@ -1,51 +1,42 @@
 # FreeAppStore Submissions
 
-Submit your app to be listed on [FreeAppStore](https://freeappstore.online).
+Submit your app to be listed on [FreeAppStore](https://freeappstore.online) or your game to [FreeGameStore](https://freegamestore.online).
 
 ## How to submit
 
 1. Read the [guidelines](https://freeappstore.online/guidelines)
-2. Build your app using our [standalone template](https://github.com/freeappstore-online/template-standalone) or [connected template](https://github.com/freeappstore-online/template-connected)
-3. [Open an issue](https://github.com/freeappstore-online/submissions/issues/new?template=app-submission.yml) using the submission template
+2. Build your app using a template:
+   - **Apps:** [standalone](https://github.com/freeappstore-online/template-standalone) or [connected](https://github.com/freeappstore-online/template-connected)
+   - **Games:** [canvas](https://github.com/freegamestore-online/template-game-canvas), [grid](https://github.com/freegamestore-online/template-game-grid), [cards](https://github.com/freegamestore-online/template-game-cards), or [3D](https://github.com/freegamestore-online/template-game-3d)
+3. [Open an issue](https://github.com/freeappstore-online/submissions/issues/new) with your repo link
 4. We review within 48 hours
 
 ## Requirements
 
-- Free forever (no monetization in the free version)
-- One app per category (check what's available at freeappstore.online)
+- Free forever (no monetization)
 - Responsive, offline-capable, PWA-installable
 - No tracking, no analytics, no cookies
 - TypeScript + React + Vite + Tailwind + pnpm
-- Manrope + Fraunces fonts, follows brand CSS variables
+- Manrope + Fraunces fonts, brand CSS variables
 - MIT license, public repo
-- CLAUDE.md for AI agent instructions
 
 ## What happens after approval
 
-1. Your repo is transferred to (or forked into) the `freeappstore-online` org
-2. Cloudflare Pages project is created
-3. Your app goes live at `yourapp.freeappstore.online`
-4. App card and detail page are added to the landing site
-5. You keep push access — updates auto-deploy on push to main
+1. Your repo is transferred to the org (`freeappstore-online` or `freegamestore-online`)
+2. Cloudflare Pages project is created automatically
+3. DNS and custom domain are configured
+4. App/game goes live at `yourapp.freeappstore.online` or `yourgame.freegamestore.online`
+5. Auto-deploy workflow is added — push to main = live
+6. You keep push access
 
-## Timeline
+## For AI agents / maintainers
 
-- First response: within 48 hours
-- Full review: within 1 week
-- If changes needed: specific feedback provided
+See the [AI Agent Guide (SKILLS.md)](https://github.com/freeappstore-online/ops/blob/main/SKILLS.md) for complete publishing instructions with exact commands.
 
-## Already listed apps
+## Currently live
 
-| App | Category | Status |
-|-----|----------|--------|
-| Chess | Strategy | Live |
-| Language | Learning | Live |
-| Math | Learning | Live |
-| Music | Discovery | Live |
-| Puzzle | Brain Training | Live |
-| Quiz | Learning | Live |
-| Books | Learning | Live |
-| Life | Learning | Live |
-| Bandmates | Social | Live |
-| Meetup | Social | Live |
-| Messenger | Social | Live |
+### Apps (freeappstore.online)
+Language, Math, Music, Quiz, Books, Life, Messenger, Bandmates, Meetup, Calculator, Chess Clock, Timer, Converter, Notes, Pomodoro, QR Code, Color Picker, Password, Whiteboard, Flashcards, Habits, Weather
+
+### Games (freegamestore.online)
+Chess, Puzzle, Tetris, Snake, Minesweeper, 2048, Slither, Racing, Bowling, Space Shooter, Breakout, Platformer, Sudoku
