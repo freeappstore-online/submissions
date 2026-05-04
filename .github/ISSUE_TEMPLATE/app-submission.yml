@@ -1,0 +1,116 @@
+name: App Submission
+description: Submit your app to be listed on FreeAppStore
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit your app to FreeAppStore
+
+        Before submitting, make sure your app meets our [guidelines](https://freeappstore.online/guidelines).
+        Use one of our [templates](https://github.com/freeappstore-online/template-standalone) to ensure compatibility.
+
+  - type: input
+    id: name
+    attributes:
+      label: App name
+      description: Single word, lowercase. This becomes your subdomain (name.freeappstore.online)
+      placeholder: "e.g. calendar, fitness, notes"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Each category can only have ONE app. Check freeappstore.online to see what's taken.
+      options:
+        - Learning
+        - Strategy
+        - Discovery
+        - Brain Training
+        - Social
+        - Productivity
+        - Health & Fitness
+        - Finance
+        - News & Weather
+        - Utilities
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: App type
+      options:
+        - Standalone (no backend, localStorage only)
+        - Connected (Firebase/Supabase backend, shared with Pro version)
+    validations:
+      required: true
+
+  - type: input
+    id: oneliner
+    attributes:
+      label: One-line description
+      placeholder: "e.g. Track daily habits and build streaks with visual progress charts"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Full description
+      description: What does the app do? Who is it for? What problem does it solve?
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository URL
+      description: Must be public and MIT licensed
+      placeholder: "https://github.com/yourname/yourapp"
+    validations:
+      required: true
+
+  - type: input
+    id: demo
+    attributes:
+      label: Demo URL (optional)
+      description: If already deployed somewhere we can try it
+      placeholder: "https://yourapp.pages.dev"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Platform requirements
+      description: Your app must meet ALL of these to be listed.
+      options:
+        - label: "Free forever — no plans to monetize the free version"
+          required: true
+        - label: "Responsive — works on mobile (320px) through desktop"
+          required: true
+        - label: "PWA — has manifest.json, works when added to home screen"
+          required: true
+        - label: "No tracking — zero analytics, cookies, or data collection"
+          required: true
+        - label: "Open source — MIT license, public repository"
+          required: true
+        - label: "Brand compliant — Manrope + Fraunces fonts, CSS variables, sidebar/dock layout"
+          required: true
+        - label: "Dark mode — supports prefers-color-scheme"
+          required: true
+        - label: "Tech stack — TypeScript, React 19, Vite 6, Tailwind 4, pnpm"
+          required: true
+        - label: "CLAUDE.md — includes AI agent instructions"
+          required: true
+        - label: "Unique category — no existing app serves the same purpose"
+          required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Anything else?
+      description: Screenshots, additional context, or questions
