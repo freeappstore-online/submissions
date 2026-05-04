@@ -1,37 +1,58 @@
-# FreeAppStore Submissions
+# FreeAppStore & FreeGameStore — Submissions
 
-Submit your app to be listed on [FreeAppStore](https://freeappstore.online) or your game to [FreeGameStore](https://freegamestore.online).
+Build free apps and games used by thousands. No server costs, no config — just code and push.
 
-## How to submit
+## Two ways to get started
 
-1. Read the [guidelines](https://freeappstore.online/guidelines)
-2. Build your app using a template:
-   - **Apps:** [standalone](https://github.com/freeappstore-online/template-standalone) or [connected](https://github.com/freeappstore-online/template-connected)
-   - **Games:** [canvas](https://github.com/freegamestore-online/template-game-canvas), [grid](https://github.com/freegamestore-online/template-game-grid), [cards](https://github.com/freegamestore-online/template-game-cards), or [3D](https://github.com/freegamestore-online/template-game-3d)
-3. [Open an issue](https://github.com/freeappstore-online/submissions/issues/new) with your repo link
-4. We review within 48 hours
+### 1. Become a Creator (recommended)
 
-## Requirements
+Join the creators program and get your own provisioned app/game with auto-deploy.
 
-- Free forever (no monetization)
-- Responsive, offline-capable, PWA-installable
-- No tracking, no analytics, no cookies
+**[Apply here](https://github.com/freeappstore-online/submissions/issues/new?template=creator-application.yml)**
+
+What you get:
+- GitHub repo in our org (from our template, ready to code)
+- Custom subdomain: `yourapp.freeappstore.online` or `yourgame.freegamestore.online`
+- Auto-deploy on every push to main via Cloudflare Pages
+- Listed in the store with your name as developer
+- Push access to your repo — ship whenever you want
+
+How it works:
+1. [Apply](https://github.com/freeappstore-online/submissions/issues/new?template=creator-application.yml) with your app/game idea
+2. We review within 48 hours
+3. Approved → we provision everything for you
+4. You clone the repo, write code, push → live
+
+### 2. Submit an existing app
+
+Already built something? Submit it for review.
+
+**[Submit your app](https://github.com/freeappstore-online/submissions/issues/new?template=app-submission.yml)**
+
+Requirements:
+- Public GitHub repo, MIT license
 - TypeScript + React + Vite + Tailwind + pnpm
-- Manrope + Fraunces fonts, brand CSS variables
-- MIT license, public repo
+- Free forever, no tracking, no ads
+- Follows our [brand guidelines](https://freeappstore.online/guidelines.html)
+- Uses our template ([standalone](https://github.com/freeappstore-online/template-standalone) or [connected](https://github.com/freeappstore-online/template-connected))
 
-## What happens after approval
+## Building with AI
 
-1. Your repo is transferred to the org (`freeappstore-online` or `freegamestore-online`)
-2. Cloudflare Pages project is created automatically
-3. DNS and custom domain are configured
-4. App/game goes live at `yourapp.freeappstore.online` or `yourgame.freegamestore.online`
-5. Auto-deploy workflow is added — push to main = live
-6. You keep push access
+Works great with Claude Code, Cursor, Codex, or any AI coding tool. Point your AI to our platform guide:
 
-## For AI agents / maintainers
+```
+Read https://raw.githubusercontent.com/freeappstore-online/ops/main/SKILLS.md
+```
 
-See the [AI Agent Guide (SKILLS.md)](https://github.com/freeappstore-online/ops/blob/main/SKILLS.md) for complete publishing instructions with exact commands.
+This tells the AI everything: tech stack, brand, how to build, how to test.
+
+## For games
+
+Same process, different templates:
+- [Canvas template](https://github.com/freegamestore-online/template-game-canvas) — 2D games
+- [Grid template](https://github.com/freegamestore-online/template-game-grid) — grid-based games
+- [Cards template](https://github.com/freegamestore-online/template-game-cards) — card games
+- [3D template](https://github.com/freegamestore-online/template-game-3d) — Three.js games
 
 ## Currently live
 
@@ -39,4 +60,12 @@ See the [AI Agent Guide (SKILLS.md)](https://github.com/freeappstore-online/ops/
 Language, Math, Music, Quiz, Books, Life, Messenger, Bandmates, Meetup, Calculator, Chess Clock, Timer, Converter, Notes, Pomodoro, QR Code, Color Picker, Password, Whiteboard, Flashcards, Habits, Weather
 
 ### Games (freegamestore.online)
-Chess, Puzzle, Tetris, Snake, Minesweeper, 2048, Slither, Racing, Bowling, Space Shooter, Breakout, Platformer, Sudoku
+Chess, Puzzle, Tetris, Snake, Minesweeper, 2048, Slither, Racing, Bowling, Space Shooter, Breakout, Platformer, Sudoku, and more
+
+## Links
+
+- [FreeAppStore](https://freeappstore.online) — apps
+- [FreeGameStore](https://freegamestore.online) — games
+- [Build guide](https://freeappstore.online/contribute.html) — how to build
+- [Guidelines](https://freeappstore.online/guidelines.html) — tech & brand requirements
+- [AI guide (SKILLS.md)](https://raw.githubusercontent.com/freeappstore-online/ops/main/SKILLS.md) — for AI agents
