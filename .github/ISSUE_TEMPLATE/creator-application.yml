@@ -1,0 +1,95 @@
+name: Become a Creator
+description: Apply to join the creators program and build apps/games for the platform
+title: "[Creator] "
+labels: ["creator-application"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Join the Creators Program
+
+        Creators get their own app/game repo in our org, a custom subdomain, and auto-deploy on push.
+        We review applications within 48 hours.
+
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub username
+      placeholder: "e.g. octocat"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: What do you want to build?
+      options:
+        - App (freeappstore.online)
+        - Game (freegamestore.online)
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: app_idea
+    attributes:
+      label: App/game idea
+      description: What do you want to build? One line.
+      placeholder: "e.g. A recipe manager with meal planning"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Tell us more
+      description: What will it do? Who is it for? Any similar apps exist?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Experience with React/TypeScript
+      options:
+        - Beginner (will use AI assistance)
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai_assisted
+    attributes:
+      label: Will you use AI coding tools?
+      options:
+        - Yes (Claude Code, Cursor, Codex, etc.)
+        - No, coding manually
+        - Mix of both
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: I agree to
+      options:
+        - label: "My app/game will be free forever — no monetization"
+          required: true
+        - label: "No tracking, analytics, or data collection"
+          required: true
+        - label: "Open source under MIT license"
+          required: true
+        - label: "Follow the platform brand guidelines and tech stack"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## What happens next
+
+        1. We review your application within 48 hours
+        2. If approved, we add you to the **creators** team
+        3. We provision your app: GitHub repo, custom domain, auto-deploy
+        4. You clone the repo and start building
+        5. Push to main → your app is live at `yourapp.freeappstore.online`
