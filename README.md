@@ -41,7 +41,7 @@ Requirements:
 Works great with Claude Code, Cursor, Codex, or any AI coding tool. Point your AI to our platform guide:
 
 ```
-Read https://raw.githubusercontent.com/freeappstore-online/ops/main/SKILLS.md
+Read https://raw.githubusercontent.com/freeappstore-online/freeappstore/main/SKILLS.md
 ```
 
 This tells the AI everything: tech stack, brand, how to build, how to test.
@@ -68,4 +68,4 @@ Chess, Puzzle, Tetris, Snake, Minesweeper, 2048, Slither, Racing, Bowling, Space
 - [FreeGameStore](https://freegamestore.online) — games
 - [Build guide](https://freeappstore.online/contribute.html) — how to build
 - [Guidelines](https://freeappstore.online/guidelines.html) — tech & brand requirements
-- [AI guide (SKILLS.md)](https://raw.githubusercontent.com/freeappstore-online/ops/main/SKILLS.md) — for AI agents
+- [AI guide (SKILLS.md)](https://raw.githubusercontent.com/freeappstore-online/freeappstore/main/SKILLS.md) — for AI agents
