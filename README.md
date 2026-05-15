@@ -34,14 +34,15 @@ Requirements:
 - TypeScript + React + Vite + Tailwind + pnpm
 - Free forever, no tracking, no ads
 - Follows our [brand guidelines](https://freeappstore.online/guidelines.html)
-- Uses our template ([standalone](https://github.com/freeappstore-online/template-standalone) or [connected](https://github.com/freeappstore-online/template-connected))
+- Uses our template ([standalone](https://github.com/freeappstore-online/template-standalone)). For connected apps (auth, KV, rooms), add `@freeappstore/sdk`.
 
 ## Building with AI
 
 Works great with Claude Code, Cursor, Codex, or any AI coding tool. Point your AI to our platform guide:
 
 ```
-Read https://raw.githubusercontent.com/freeappstore-online/freeappstore/main/SKILLS.md
+Read https://freeappstore.online/skills.md
+Read https://freeappstore.online/skills.md
 ```
 
 This tells the AI everything: tech stack, brand, how to build, how to test.
@@ -68,4 +69,5 @@ Chess, Puzzle, Tetris, Snake, Minesweeper, 2048, Slither, Racing, Bowling, Space
 - [FreeGameStore](https://freegamestore.online) — games
 - [Build guide](https://freeappstore.online/contribute.html) — how to build
 - [Guidelines](https://freeappstore.online/guidelines.html) — tech & brand requirements
-- [AI guide (SKILLS.md)](https://raw.githubusercontent.com/freeappstore-online/freeappstore/main/SKILLS.md) — for AI agents
+- [AI guide (SKILLS.md)](https://freeappstore.online/skills.md) — for AI agents
+- [AI guide (SKILLS.md)](https://freeappstore.online/skills.md) — for AI agents
